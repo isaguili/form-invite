@@ -1,0 +1,58 @@
+body {
+  background-color: var(--shape-body);
+}
+
+#app {
+
+  height: 100vh;
+  margin: auto;
+  
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 2rem;
+  padding: 2rem;
+
+  & aside {
+    margin-left: auto;
+    width: 100%;
+    padding: 3.2rem;
+
+    overflow: hidden;
+    margin-left: auto;
+    position: relative;
+
+    background:  url('/assets/images/cake-background.png') no-repeat center;
+    background-size: cover;
+
+    & header {
+      max-width: 33.6rem;
+      margin-left: auto;
+    }
+    
+    & img {
+      width: 4.5rem;
+      height: 4.8rem;
+      margin-bottom: 1.6rem
+    }
+
+    h1 {
+      font: var(--text-logo);
+      color: #FF598B;
+      margin-bottom: .4rem;
+    }
+
+    p {
+      font: var(--text-body-md);
+      font-weight: 300;
+      color: var(--text-heading);
+    }
+  }
+
+  & main {
+    overflow: auto;
+   
+    & #main-container {
+      max-width: 82rem;
+  }
+}
+

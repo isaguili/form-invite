@@ -1,26 +1,3 @@
 @import url(global.css);
+@import url(layout.css);
 
-body {
-  background-color: var(--shape-background);
-}
-
-#app {
-  width: 128rem;
-  height: 100vh;
-  margin: auto;
-
-  display: grid;
-  grid-template-columns: 32.8% 67.2%;
-  padding: 2rem;
-  gap: 2rem;
-}
-
-aside {
-  overflow: hidden;
-}
-
-main {
-  background-color: var(--shape-body);
-  border-radius: .12rem;
-  overflow-y: scroll;
-}
