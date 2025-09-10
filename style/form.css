@@ -1,0 +1,46 @@
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 4.8rem;
+  margin: 8rem auto 0rem;
+  max-width: calc(100% - 22rem);
+
+  & fieldset {
+    border: none;
+    display: flex;
+    flex-direction: column;
+
+    & .head-fieldset {
+      display: flex;
+      gap: 1.2rem;
+
+      & legend {
+        font: var(--text-heading-sm);
+        color: var(--text-heading);
+      }
+
+      & img {
+        height: 2.4rem;
+      }
+      
+    }
+
+  }
+}
+
+
+#about-event {
+
+  gap: 1.6rem;
+
+  & .grid-two-columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.6rem;
+  }
+
+  .event-types {
+    display: flex;
+  }
+
+}

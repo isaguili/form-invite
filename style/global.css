@@ -31,12 +31,12 @@
   /* FONTS */
   font-size: 62.5%;
 
-  --text-logo: 4rem "Leckerli One", cursive;
+  --text-logo: 4rem 'Leckerli One', cursive;
  
-  --text-heading-md: 2.8rem "Baloo 2", sans-serif 700;
-  --text-heading-md: 1.8rem "Baloo 2", sans-serif 700;
+  --text-heading-md: 2.8rem 'Baloo 2', sans-serif;
+  --text-heading-sm: 1.8rem 'Baloo 2', sans-serif;
  
-  --text-body-md: 1.6rem "Open Sans", sans-serif;
-  --text-body-sm: 1.4rem "Open Sans", sans-serif;
-  --text-body-xs: 1.2rem "Open Sans", sans-serif;
+  --text-body-md: 1.6rem 'Open Sans', sans-serif;
+  --text-body-sm: 1.4rem 'Open Sans', sans-serif;
+  --text-body-xs: 1.2rem 'Open Sans', sans-serif;
 }
