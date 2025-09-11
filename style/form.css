@@ -44,3 +44,29 @@ form {
   }
 
 }
+
+
+#customization {
+  gap: 2.8rem;
+
+  .theme-grid-template {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: .8rem;
+  }
+  
+  & .flex {
+    display: flex;
+    gap: 1.6rem;
+
+    & > :nth-child(1) {
+      width: 17.6rem;
+    }
+
+    & > :nth-child(2) {
+      width: 100%
+    }
+
+  }
+}

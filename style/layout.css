@@ -1,12 +1,12 @@
 body {
   background-color: var(--shape-background);
+  overflow: hidden;
 }
 
 #app {
-
   height: 100vh;
   margin: auto;
-  
+    
   display: grid;
   grid-template-columns: 1fr 2fr;
   gap: 2rem;
@@ -65,4 +65,5 @@ body {
       font: var(--text-heading-md);
       color: var(--text-heading);
     }
+  }
 }
