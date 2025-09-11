@@ -2,7 +2,7 @@ form {
   display: flex;
   flex-direction: column;
   gap: 4.8rem;
-  margin: 8rem auto 0rem;
+  margin: 8rem auto 8rem;
   max-width: calc(100% - 22rem);
 
   & fieldset {
@@ -28,7 +28,6 @@ form {
   }
 }
 
-
 #about-event {
 
   gap: 1.6rem;
@@ -44,7 +43,6 @@ form {
   }
 
 }
-
 
 #customization {
   gap: 2.8rem;
@@ -69,4 +67,25 @@ form {
     }
 
   }
+}
+
+#contact {
+  gap: 1.6rem;
+
+  & .flex {
+    display: flex;
+    flex-direction: row;
+    gap: 1.6rem;
+    
+    & .input-wrapper {
+      width: 100%;
+    }
+
+  }
+
+}
+
+.line {
+  height: 1px;
+  background-color: var(--shape-hover);
 }

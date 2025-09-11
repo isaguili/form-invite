@@ -38,7 +38,7 @@
  
   --text-body-md: 1.6rem 'Open Sans', sans-serif;
   --text-body-sm: 1.4rem 'Open Sans', sans-serif;
-  --text-body-xs: 1.2rem 'Open Sans', sans-serif;
+  --text-body-xs: 1.2rem 'Open Sans', sans-serif; 
 }
 
 .sr-only {
@@ -51,3 +51,4 @@
   clip: rect(0, 0, 0, 0);
   border: 0;
 }
+

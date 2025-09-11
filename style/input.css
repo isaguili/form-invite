@@ -1,4 +1,4 @@
-/* all inputs */
+/* default inputs */
 .input-wrapper, input{
   color: var(--text-body);
   font: var(--text-body-md);
@@ -33,6 +33,19 @@
       outline: none;
       transition: ease-in-out .2s;
     }
+
+    &:invalid {
+      border: 1px solid var(--danger);
+    }
+
+    & + .alert {
+      display: none;
+    }
+
+    &:invalid + .alert {
+      display: block;
+    }
+
   }
 }
 
@@ -98,10 +111,11 @@ input[type="radio"] {
     &:has(input:checked) {
       color: var(--text-heading);
       font-weight: 500;
-      transition: .2s;
+      transition: ease .2s;
 
       & svg path {
         fill: var(--brand-light);
+        transition: ease .2s
       }
       
     }
@@ -128,6 +142,18 @@ textarea {
     border-color: var(--brand-light);
     outline: none;
   }
+
+  &:invalid {
+    border: 1px solid var(--danger);
+  }
+
+  & + .alert {
+    display: none;
+  }
+
+  &:invalid + .alert {
+    display: block;
+  }
 }
 
 /* color radio input */
@@ -141,10 +167,10 @@ textarea {
       height: 4rem;
       border-radius: 50%;
       border: 4px solid var(--shape-hover);
+      outline: 1px solid transparent;
 
-      &:hover, &:focus {
+      &:checked {
         outline: 1px solid var(--brand-light);
-        transition: .2s;
       }
     }
 }
@@ -191,6 +217,7 @@ textarea {
 
 .theme-radio:has(:checked) {
   border: 2px solid var(--brand-light);
+  transition: ease-out .2s;
 }
 
 /* toggle input */
@@ -273,8 +300,20 @@ textarea {
     &:hover {
       background-color: var(--shape-hover);
     }
+
   }
 
+  &:not(:invalid) + .alert {
+    display: none;
+  }
+
+  &:has(:invalid) + .alert {
+    display: block;
+  }
+
+  & + .alert {
+    margin-top: -1.2rem;
+  }
 }
 
 #img-cover {
@@ -288,6 +327,32 @@ textarea {
 
 }
 
+/* checkbox input - terms */
 
+#terms {
+  gap: .4rem;
 
+  .input-wrapper {
+    flex-direction: row;
+    gap: 1.2rem;
+    padding: .4rem 0;
+    font: var(--text-body-sm);
+    
+    & input {
+      width: 2rem;
+      height: 2rem;
+      flex-shrink: 0;
+      padding: 0;
+      border-radius: .4rem;
 
+      &:checked {
+        background-image: url(/assets/icons/check.svg);
+        background-size: cover;
+        background-color: var(--input-base);
+        border: 1px solid var(--brand-light);
+      }
+    }
+  }
+}
+
+  

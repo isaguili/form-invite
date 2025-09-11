@@ -41,7 +41,10 @@
 
               <div class="input-wrapper">
                 <label for="title">Título</label>
-                <input type="text" id="title" placeholder="Nome do evento">
+                <input type="text" id="title" placeholder="Nome do evento" required>
+                <div class="alert">
+                  <img src="/assets/icons/circle-alert.svg" alt="alert">
+                </div>
               </div>
 
               <div class="grid-two-columns">
@@ -92,7 +95,10 @@
                     
               <div class="input-wrapper">
                 <label for="description">Descrição</label>
-                <textarea name="description" id="description" placeholder="Escreva sobre os detalhes do evento"></textarea>
+                <textarea name="description" id="description" placeholder="Escreva sobre os detalhes do evento (min: 200 caracteres)" minlength="200" required></textarea>
+                <div class="alert">
+                    <img src="/assets/icons/circle-alert.svg" alt="alert">
+                </div>
               </div>
             </fieldset>
               
@@ -266,16 +272,72 @@
                   <Legend>Foto de capa</Legend>
                   <div class="file-input">
                     <label for="img-cover">
-                      <img src="/assets/icons/upload.svg" alt="">
+                      <img src="/assets/icons/upload.svg" alt="update icon">
                       Selecionar
                     </label>
-                    <input type="file" id="img-cover" accept="image/png, image/jpeg" >
+                    <input type="file" id="img-cover" accept="image/png, image/jpeg" accept="image/*" required>
+                  </div>
+                  <div class="alert">
+                    <img src="/assets/icons/circle-alert.svg" alt="alert">
                   </div>
                 </div>
               </div>
 
 
             </fieldset>
+
+            <fieldset id="contact">              
+              <div class="head-fieldset">
+                <img src="/assets/icons/contact.svg" alt="agenda">
+                <legend>Dados para contato</legend>  
+              </div>
+              
+              <div class="input-wrapper">
+                <label for="name">Nome</label>
+                <input type="text" id="name" placeholder="Nome completo" required>
+                <div class="alert">
+                  <img src="/assets/icons/circle-alert.svg" alt="alert">
+                </div>
+              </div>
+
+              <div class="flex">
+                <div class="input-wrapper">
+                  <label for="email" >Email</label>
+                  <input type="email" id="email"  placeholder="exemplo@email.com" pattern=".\@.\..">
+                </div>
+
+                <div class="input-wrapper">
+                  <label for="number">Telefone</label>
+                  <input type="tel" id="number" placeholder="(99) 99999-9999" pattern="\(\d{2}\) \d{5}-\d{4}" inputmode="numeric">
+                </div>
+              </div>
+            </fieldset>
+             
+            <div class="line"></div>
+
+            <fieldset id="terms">
+              <div class="input-wrapper">
+                <input type="checkbox" id="terms-and-conditions" required>
+                <label for="terms-and-conditions">Li e concordo com os <a href="#">Termos e Condições</a> e com a  <a href="">Política de Privacidade</a> 
+                </label>
+              </div>
+
+              <div class="input-wrapper">
+                <input type="checkbox" id="info-email">
+                <label for="info-email">Aceito receber atualizações e promoções por e-mail</label>
+              </div>
+
+              <div class="input-wrapper">
+                <input type="checkbox" id="info-sms">
+                <label for="info-sms">Aceito receber atualizações e promoções por SMS</label>
+              </div>
+            
+            </fieldset>
+
+            <button>
+              <img src="/assets/icons/ticket.svg" alt="ticket">
+              <span>Gerar convite</span>
+            </button>
             
           </form>      
         
